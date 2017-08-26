@@ -1,14 +1,12 @@
-function [runs, money] = BetRed()
+function money = BetRed()
     %gambling setuo
     red = 18;
     black = 20;
     green = 19;
     
     %initial gambler setup
-    money = 1;
+    money = 0;
     
-    %recording number of runs
-    runs  = 0;
     
     %this generate an random integer from 1 to 37
     bet = randi(37,1,1);
@@ -17,7 +15,6 @@ function [runs, money] = BetRed()
     else
         money = money - 1;
     end
-    
-    runs = runs + 1;
+
 end
     
